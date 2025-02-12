@@ -18,14 +18,22 @@ function Courses({courses }) {
             return checkIndex(newIndex);
         })
     }
-    const checkIndex = (index)  => {}
+    const checkIndex = (index)  => {
+        if(index<0){
+            return courses.length - 1;
+        }
+        if(index>4){
+            return 0;
+        }
+        return index;
+    }
 
     return <div className="courses-general">
         <div>
             <h2>KURSLARIM</h2>
         </div>
         <div className="cardDiv">
-        <button className="prevNext" onClick={prevCourse}><FaChevronLeft /></button>
+        <button className="prevNext" onClick={prevCourse} ><FaChevronLeft /></button>
         <div className="cardTitlePrice">
             <h2 className="cardTitle">{title}</h2>
             <p>{content}</p>
