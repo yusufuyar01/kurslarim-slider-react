@@ -30,11 +30,14 @@
     font-style: italic;
 }
 .cardDelete{
-    padding: 10px;
+    padding: 20px;
     width: 100px;
     border-radius: 30px;
     border: none;
     background-color: lightblue;
+    width: 200px;
+    font-size: large;
+
 }
 .refleshDiv{
     display: flex;
@@ -50,4 +53,7 @@
     border: none;
     background-color: lightblue;
     border-radius: 20px;
+}
+.header{
+    display: contents;
 }

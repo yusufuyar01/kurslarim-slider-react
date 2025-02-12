@@ -4,7 +4,16 @@ import { FaChevronLeft, FaChevronRight  } from "react-icons/fa";
 
 function Courses({courses }) {
     const [index, setIndex] = useState(0)
+
     const { content, title, price}  = courses[index];
+
+    const randCourse = () => {
+    let randomNumber = Math.floor(Math.random()*courses.length);
+    if(randomNumber === index){
+        randomNumber = index + 1;
+    }
+    setIndex(checkIndex(randomNumber));
+    }
 
     const prevCourse = () => {
         setIndex((index) => {
@@ -29,8 +38,9 @@ function Courses({courses }) {
     }
 
     return <div className="courses-general">
-        <div>
+        <div className="header">
             <h2>KURSLARIM</h2>
+            <button className="cardDelete" onClick={randCourse}>Rastgele Kurs Ata</button>
         </div>
         <div className="cardDiv">
         <button className="prevNext" onClick={prevCourse} ><FaChevronLeft /></button>
