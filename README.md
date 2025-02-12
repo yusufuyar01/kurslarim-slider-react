@@ -1,0 +1,2 @@
+# kurslarim-slider-react
+ 
