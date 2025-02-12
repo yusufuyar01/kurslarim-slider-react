@@ -42,3 +42,13 @@
     flex-direction: column;
     align-items: center;
 }
+.cardDiv{
+    display: flex;
+    align-items: center;
+}
+.prevNext{
+    height: 30px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 20px;
+}
