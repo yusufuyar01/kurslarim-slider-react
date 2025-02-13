@@ -19,7 +19,7 @@ Bu projenin bağımlılıkları `npm` ve `npx` kullanarak kolayca yüklenebilmek
  https://github.com/yusufuyar01/kurslarim-slider-react.git
  
 2) Ardından proje klasörünü açın:
-   cd kurslarim-projesi-react ya da  cd tkurslarim-projesi-react-main
+   cd kurslarim-slider-react ya da  cd kurslarim-slider-react-main
 3) Gerekli bağımlılıkları yükleyin:<br/>
  npm install  #Bağımlılıkları indirir. <br/> 
  npm install axios  #Axios api bağlantı kurulumu yapar.<br/>
